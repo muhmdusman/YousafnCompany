@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Milos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#00A0AE', secondary: '#103336', accent: '#103336', soft: '#EAF0F5', body: '#4A595A' }, fontFamily: { poppins: ['Poppins','sans-serif'], roboto: ['Roboto','sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-roboto text-body bg-white">
+
+  <section class="relative min-h-screen flex items-center justify-center bg-secondary overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://web.rabonadev.com/milos/wp-content/uploads/sites/4/2023/04/milos18.jpg');"></div>
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="relative text-center px-5 py-20">
+      <h1 class="font-poppins text-2xl md:text-3xl font-semibold text-white mb-4 scroll-animate" data-animation="animate-fadeInDown">We Are Sorry!!</h1>
+      <p class="font-poppins text-[8rem] md:text-[12rem] font-bold text-primary leading-none mb-4 scroll-animate" data-animation="animate-zoomIn">404</p>
+      <h2 class="font-poppins text-2xl md:text-3xl font-semibold text-white mb-10 scroll-animate" data-animation="animate-fadeInUp">Page Not Found</h2>
+      <a href="index.html" class="inline-block bg-primary text-white text-xs font-medium tracking-wider px-9 py-5 hover:bg-white hover:text-secondary transition-colors btn-primary">Back to Home</a>
+    </div>
+  </section>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

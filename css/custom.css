@@ -1,0 +1,174 @@
+/* Milos - Aluminum & Glass - Custom Styles */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(90deg, #103336 20%, transparent 70%);
+}
+
+/* CTA section overlay */
+.cta-overlay {
+  background: linear-gradient(90deg, #00A0AE 50%, transparent 50%);
+}
+
+/* Image overlap effect */
+.img-overlap {
+  margin-top: -100px;
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .img-overlap {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+/* Service card hover */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 160, 174, 0.2);
+}
+
+/* Gallery image hover - shrink effect */
+.gallery-img {
+  transition: transform 0.4s ease;
+  overflow: hidden;
+}
+.gallery-img:hover img {
+  transform: scale(0.95);
+}
+.gallery-img img {
+  transition: transform 0.4s ease;
+}
+
+/* Testimonial carousel */
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.testimonial-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+/* Counter animation */
+.counter-number {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Pricing card popular highlight */
+.pricing-popular {
+  transform: translateY(-20px);
+  box-shadow: 0 8px 30px rgba(0, 160, 174, 0.25);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.mobile-menu.open {
+  max-height: 400px;
+}
+
+/* Nav link hover underline */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00A0AE;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button hover */
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Social icon hover */
+.social-icon {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeInUp { animation: fadeInUp 0.7s ease forwards; }
+.animate-fadeInDown { animation: fadeInDown 0.7s ease forwards; }
+.animate-fadeInLeft { animation: fadeInLeft 0.7s ease forwards; }
+.animate-fadeInRight { animation: fadeInRight 0.7s ease forwards; }
+.animate-zoomIn { animation: zoomIn 0.7s ease forwards; }
+
+/* Initially hidden for scroll animations */
+.scroll-animate {
+  opacity: 0;
+}
+.scroll-animate.animated {
+  opacity: 1;
+}
+
+/* Team member card hover */
+.team-card:hover img {
+  transform: scale(1.05);
+}
+.team-card img {
+  transition: transform 0.4s ease;
+}
+
+/* Form focus styles */
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 160, 174, 0.3);
+}
+
+/* Pricing list check icon */
+.pricing-list li::before {
+  content: '✓';
+  color: #00A0AE;
+  font-weight: 700;
+  margin-right: 12px;
+}
