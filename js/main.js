@@ -1,4 +1,4 @@
-// Milos - Aluminum & Glass - Main JavaScript
+// Yousaf Aluminium & Glass Works Lahore - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
@@ -163,12 +163,11 @@ function setActiveNavLink() {
   });
 }
 
-// ── Form Validation ──
+// ── Form Validation (Web3Forms handles submission) ──
 function initFormValidation() {
   const forms = document.querySelectorAll('form[data-validate]');
   forms.forEach(form => {
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
       const inputs = form.querySelectorAll('[required]');
       let valid = true;
 
@@ -176,42 +175,16 @@ function initFormValidation() {
         if (!input.value.trim()) {
           valid = false;
           input.classList.add('border-red-500');
+          e.preventDefault();
         } else {
           input.classList.remove('border-red-500');
         }
       });
-
-      if (valid) {
-        const btn = form.querySelector('button[type="submit"]');
-        btn.textContent = 'Sent Successfully!';
-        btn.classList.add('bg-green-600');
-        setTimeout(() => {
-          btn.textContent = btn.dataset.originalText || 'Send';
-          btn.classList.remove('bg-green-600');
-          form.reset();
-        }, 3000);
-      }
     });
   });
 }
 
 // ── Newsletter Form ──
 document.addEventListener('DOMContentLoaded', () => {
-  const newsletterForm = document.getElementById('newsletter-form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = newsletterForm.querySelector('button');
-      const originalText = btn.textContent;
-      btn.textContent = 'Subscribed!';
-      btn.classList.replace('bg-secondary', 'bg-green-600');
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.classList.replace('bg-green-600', 'bg-secondary');
-        newsletterForm.reset();
-      }, 3000);
-    });
-  }
-
-  initFormValidation();
+  // Forms now handled by Web3Forms POST - no JS override needed
 });

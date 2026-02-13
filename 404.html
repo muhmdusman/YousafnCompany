@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Page Not Found | Milos</title>
+  <title>Page Not Found | Yousaf Aluminium & Glass Works Lahore</title>
+  <meta name="description" content="The page you are looking for does not exist. Return to Yousaf Aluminium & Glass Works Lahore homepage.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#00A0AE">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -17,16 +21,90 @@
 </head>
 <body class="font-roboto text-body bg-white">
 
-  <section class="relative min-h-screen flex items-center justify-center bg-secondary overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://web.rabonadev.com/milos/wp-content/uploads/sites/4/2023/04/milos18.jpg');"></div>
-    <div class="hero-overlay absolute inset-0"></div>
-    <div class="relative text-center px-5 py-20">
-      <h1 class="font-poppins text-2xl md:text-3xl font-semibold text-white mb-4 scroll-animate" data-animation="animate-fadeInDown">We Are Sorry!!</h1>
-      <p class="font-poppins text-[8rem] md:text-[12rem] font-bold text-primary leading-none mb-4 scroll-animate" data-animation="animate-zoomIn">404</p>
-      <h2 class="font-poppins text-2xl md:text-3xl font-semibold text-white mb-10 scroll-animate" data-animation="animate-fadeInUp">Page Not Found</h2>
-      <a href="index.html" class="inline-block bg-primary text-white text-xs font-medium tracking-wider px-9 py-5 hover:bg-white hover:text-secondary transition-colors btn-primary">Back to Home</a>
+  <!-- Header -->
+  <header class="bg-secondary w-full z-50 sticky top-0">
+    <div class="max-w-[1400px] mx-auto flex items-center justify-between px-5 md:px-[4%] py-3">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="images/logo-white.png" alt="Yousaf Aluminium & Glass Works Lahore" class="h-[47px] w-auto">
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-white text-sm font-medium tracking-wide hover:text-primary transition-colors">Home</a>
+        <a href="about.html" class="nav-link text-white text-sm font-medium tracking-wide hover:text-primary transition-colors">About</a>
+        <a href="services.html" class="nav-link text-white text-sm font-medium tracking-wide hover:text-primary transition-colors">Services</a>
+        <a href="project.html" class="nav-link text-white text-sm font-medium tracking-wide hover:text-primary transition-colors">Projects</a>
+        <a href="blog.html" class="nav-link text-white text-sm font-medium tracking-wide hover:text-primary transition-colors">Blog</a>
+        <a href="contact.html" class="nav-link text-white text-sm font-medium tracking-wide hover:text-primary transition-colors">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-block bg-primary text-white text-xs font-medium tracking-wider px-8 py-4 hover:bg-white hover:text-secondary btn-primary">Get a Quote</a>
+      <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Toggle menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu lg:hidden bg-secondary px-5"><nav class="flex flex-col gap-4 py-4"><a href="index.html" class="text-white text-sm hover:text-primary">Home</a><a href="about.html" class="text-white text-sm hover:text-primary">About</a><a href="services.html" class="text-white text-sm hover:text-primary">Services</a><a href="project.html" class="text-white text-sm hover:text-primary">Projects</a><a href="blog.html" class="text-white text-sm hover:text-primary">Blog</a><a href="contact.html" class="text-white text-sm hover:text-primary">Contact</a></nav></div>
+  </header>
+
+  <!-- 404 Section -->
+  <section class="py-40 px-5 md:px-[4%] text-center bg-soft min-h-[60vh] flex items-center">
+    <div class="max-w-[1400px] mx-auto">
+      <h1 class="font-poppins text-[8rem] md:text-[12rem] font-bold text-primary leading-none mb-4">404</h1>
+      <h2 class="font-poppins text-2xl md:text-4xl font-semibold text-secondary mb-6">Page Not Found</h2>
+      <p class="text-body text-lg max-w-lg mx-auto mb-8">Sorry, the page you're looking for doesn't exist or has been moved. Let us help you find the best aluminium and glass solutions in Lahore.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="index.html" class="bg-primary text-white text-sm font-medium tracking-wider px-10 py-4 hover:bg-secondary transition-colors inline-block">Back to Home</a>
+        <a href="contact.html" class="bg-secondary text-white text-sm font-medium tracking-wider px-10 py-4 hover:bg-primary transition-colors inline-block">Contact Us</a>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-accent py-20 px-5 md:px-[4%]">
+      <div class="max-w-[1400px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:pr-10">
+          <span class="font-poppins text-2xl font-bold text-primary">YOUSAF</span>
+          <span class="block font-poppins text-xs text-soft/80 mb-6">Aluminium & Glass Works</span>
+          <p class="text-soft/80 text-sm leading-relaxed">Yousaf Aluminium & Glass Works is Lahore's trusted provider of premium aluminium doors, windows, glass railings, and commercial glass solutions. Serving since over 25 years.</p>
+        </div>
+        <div>
+          <h4 class="font-poppins text-lg font-medium text-white mb-6">Contact Us</h4>
+          <ul class="space-y-3 text-soft/80 text-sm">
+            <li class="flex items-center gap-3"><i class="fas fa-phone-alt text-primary"></i> <a href="tel:03213225547" class="hover:text-primary transition-colors">0321 3225547</a></li>
+            <li class="flex items-center gap-3"><i class="far fa-envelope text-primary"></i> <a href="mailto:yousafncompany@gmail.com" class="hover:text-primary transition-colors">yousafncompany@gmail.com</a></li>
+            <li class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-primary"></i> Fatima Building, 1-A Cooper Rd, Royal Park, Lahore, 54000</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-poppins text-lg font-medium text-white mb-6">Quick Links</h4>
+          <ul class="space-y-3 text-soft/80 text-sm">
+            <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+            <li><a href="services.html" class="hover:text-primary transition-colors">Our Services</a></li>
+            <li><a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-poppins text-lg font-medium text-white mb-6">Our Services</h4>
+          <ul class="space-y-3 text-soft/80 text-sm">
+            <li><a href="services.html" class="hover:text-primary transition-colors">Aluminium Doors</a></li>
+            <li><a href="services.html" class="hover:text-primary transition-colors">Aluminium Windows</a></li>
+            <li><a href="services.html" class="hover:text-primary transition-colors">Glass Railings</a></li>
+            <li><a href="project.html" class="hover:text-primary transition-colors">Our Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary px-5 md:px-[4%]">
+      <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center justify-between py-4 border-t border-body/30">
+        <span class="text-soft/60 text-sm">Copyright &copy; 2026 Yousaf Aluminium & Glass Works Lahore. All Rights Reserved. | Built by <a href="https://makersgoonline.software" target="_blank" rel="noopener" class="text-primary hover:underline">MakersGoOnline</a></span>
+        <div class="flex gap-3 mt-3 md:mt-0">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon w-8 h-8 rounded-full bg-white text-secondary flex items-center justify-center text-xs hover:bg-primary hover:text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon w-8 h-8 rounded-full bg-white text-secondary flex items-center justify-center text-xs hover:bg-primary hover:text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/923213225547" target="_blank" rel="noopener" class="social-icon w-8 h-8 rounded-full bg-white text-secondary flex items-center justify-center text-xs hover:bg-primary hover:text-white" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923213225547" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
   <script src="js/main.js" defer></script>
 </body>
